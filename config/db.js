@@ -44,7 +44,7 @@ connection.connect((err) => {
                 apellido VARCHAR(40) NOT NULL,
                 email VARCHAR(45) NOT NULL,
                 password VARCHAR(32) NOT NULL,
-                num_tarjeta INT(16));
+                num_tarjeta INT NOT NULL);
                 `;
                 // pasamos la consulta 
                 connection.query(createTableQuery,(err,result) => {
